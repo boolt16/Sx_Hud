@@ -2,8 +2,6 @@ fx_version 'adamant'
 
 game 'gta5'
 
-description 'Recreated by carlossdev#4444'
-
 version '1.0.0'
 
 ui_page 'html/ui.html'
@@ -19,7 +17,6 @@ files {
 	'html/img/fuel.svg',
 	'html/sounds/seatbelt-buckle.ogg',
 	'html/sounds/seatbelt-unbuckle.ogg',
-	--'html/sounds/car-indicators.ogg',
 }
 
 client_scripts {
@@ -43,11 +40,3 @@ server_scripts {
 dependencies {
 	'es_extended'
 }
-
-
-
-
-
-
-
-client_script '@NWAC/Shareds/ToLoad.lua'
