@@ -1,0 +1,125 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,900&display=swap"
+      id="font"
+    />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
+
+    <link rel="stylesheet" type="text/css" href="main.css" />
+
+    <title>UI</title>
+  </head>
+
+  <body style="font-family: 'Montserrat'">
+    <div id="ui">
+      <div class="info server" style="display: block">
+        <!-- <div id="server"><img src="https://i.imgur.com/I0vArYy.png" /></div>-->
+        <div id="server"><img src="https://cdn.discordapp.com/attachments/797707099568078850/829855643775008788/X.png" /></div>
+      </div>
+
+      <div class="info vehicle inactive animated faster">
+        <div id="speedometer">
+          <div id="progress-speed">
+            <svg viewBox="0 0 100 100">
+              <circle cx="50" cy="50" r="45" class="mask" />
+              <circle cx="50" cy="50" r="45" class="speed zero" />
+            </svg>
+          </div>
+          <div id="progress-rpm">
+            <svg viewBox="0 0 100 100">
+              <circle cx="50" cy="50" r="45" class="mask" />
+              <circle cx="50" cy="50" r="45" class="speed zero" />
+            </svg>
+          </div>
+          <div id="vehicle-speed">
+            <span>999</span>
+            <strong>KM/H</strong>
+          </div>
+          <!--<div id="vehicle-rpm">
+            <span>12000</span>
+            <strong>RPM</strong>
+          </div>-->
+          <div id="vehicle-gear" class="icon text">
+            <i><img style="margin-top: -7px" src="img/gear.svg" /></i
+            ><span style="margin: -3 0 0 0">N</span>
+          </div>
+          <div id="vehicle-others" class="icon" style="display: none">
+            <i class="fas fa-biking"></i>
+          </div>
+          <div id="vehicle-status-right-down">
+            <ul>
+              <li class="icon off" id="seatbelt">
+                <i><img style="margin: 1px 0 0 0" src="img/seatbelt.svg" /></i
+                ><span style="height: 100%"></span>
+              </li>
+              <li class="icon" id="fuel">
+                <i><img style="margin: 2px 0 0 5px" src="img/fuel.svg" /></i
+                ><span style="height: 100%"></span>
+              </li>
+            </ul>
+          </div>
+          <div id="vehicle-status-right">
+            <ul>
+              <li class="icon normal" id="lights">
+                <i
+                  ><img
+                    style="margin-top: 2px; margin-left: 3px"
+                    src="img/lights.svg" /></i
+                ><span></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="info player">
+        <div id="status">
+          <ul>
+            <li class="icon" id="health" style="display: block">
+              <i class="fas fa-heart"></i><span></span>
+            </li>
+            <li class="icon" id="armor" style="display: block">
+              <i class="fas fa-shield-alt"></i><span></span>
+            </li>
+            <li class="icon" id="stamina" style="display: none">
+              <i class="fas fa-running"></i><span></span>
+            </li>
+            <li class="icon" id="hunger" style="display: block">
+              <i class="fas fa-utensils"></i><span></span>
+            </li>
+            <li class="icon" id="thirst" style="display: block">
+              <i class="fas fa-tint"></i><span></span>
+            </li>
+            <li class="icon" id="stress" style="display: none">
+              <i class="fas fa-brain"></i><span></span>
+            </li>
+            <li class="icon" id="voice" style="display: block">
+              <i class="fas fa-volume-down"></i><span></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <audio id="sounds">
+        <source type="audio/ogg" />
+      </audio>
+    </div>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/saferInnerHTML@1/dist/saferInnerHTML.polyfills.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
