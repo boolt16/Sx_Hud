@@ -2,3 +2,5 @@
 # SX-HUD
 # MADE BY: zNoxy15 & !zXyz
 # Fivem Hud  made from ESX framework
+
+# Edit: Remake by bolt16
